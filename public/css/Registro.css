@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: Leelawadee UI;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#contenedor, form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #148787;
+}
+
+#panel{
+    padding: 0px 25px;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    width: 300px;
+    height: 340px;
+    align-items: center;
+    justify-items: center;
+    background-color: #F3DFC1;
+    border-radius: 5px;
+    grid-auto-columns: 50% 50%;
+    grid-auto-rows: 70px 100px 100px 70px;
+    grid-template-areas:
+        "header header"
+        "user user"
+        "password password"
+        "buttom1 buttom2";
+}
+
+.Titulo{
+    display: grid;
+    grid-area: header;
+    font-size: 30px;
+    font-weight: 800;
+    color: #820263;
+    align-self: end;
+    padding: 7px;
+    border-bottom: 3px solid #820263!important;
+}
+
+#Usuario {
+    display: grid;
+    grid-area: user;
+    font-size: 18px;
+    font-weight: 600;
+    color: #820263;
+    padding: 10px;
+    align-self: end;
+}
+
+#Contraseña {
+    display: grid;
+    grid-area: password;
+    font-size: 18px;
+    font-weight: 600;
+    color: #820263;
+    padding: 10px;
+    align-self: start;
+}
+
+input {
+    background: 0;
+    color: #820263;
+    border-width: 0px 0px 2px 0px;
+    border-color: #820263;
+}
+
+#Volver {
+    display: grid;
+    grid-area: buttom2;
+}
+
+#Crear {
+    
+    display: grid;
+    grid-area: buttom1;
+}
+
+button {
+    display: grid;
+    align-self: start;
+    cursor: pointer;
+    background-color: #820263;
+    height: 30px;
+    width: 100px;
+    border: 0;
+    border-radius: 5px;
+    color: #F3DFC1;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: #A53A8A;
+    color: #F3DFC1;
+}
